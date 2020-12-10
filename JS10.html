@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 style="color: blue;">JavaScript wierd buttons</h1>
+
+<p id="nr1">Very cool text</p>
+
+
+<script>
+function myFunction() {
+    
+  document.getElementById("nr1").style.fontSize = "25px"; 
+  document.getElementById("nr1").style.color = "red";
+  document.getElementById("nr1").style.backgroundColor = "green";     
+}
+function myFunction2(){
+alert("You pressed the wrong button");
+}
+function myFunction3(){
+document.getElementById("blabla").innerHTML = Date();
+}
+function myFunction4(){
+window.open("https://youtu.be/dQw4w9WgXcQ"); 
+}
+function myFunction5(){
+    confirm("Yes Yes");
+}
+function myFunction6(){
+    window.print();
+}
+function myFunction7(){
+    document.getElementById("webadress").innerHTML =  window.location.href;
+}
+function myFunction8(){
+    document.getElementById("hostname1").innerHTML =  window.location.hostname;
+}
+
+
+
+
+</script>
+
+<button type="button" onclick="myFunction()">Change style of text</button>
+<br>
+<br>
+<button type="button" onclick="myFunction2()">Alert</button>
+<br>
+<br>
+<button type="button" onclick="myFunction3()">Click to display the time</button>
+<p id="blabla"></p>
+<br>
+<button type="button" onclick="myFunction4()">Click for a suprice;)</button>
+<br>
+<br>
+<button type="button" onclick="myFunction5()">Yes</button>
+<br>
+<br>
+<button type="button" onclick="myFunction6()">Press this button if you want to print this website.</button>
+<br>
+<br>
+<br>
+<button type="button" onclick="myFunction7()">Webadress</button>
+<p id="webadress"></p>
+<br>
+<button type="button" onclick="myFunction8()">Hostname</button>
+<p id="hostname1"></p>
+
+
+
+</body>
+</html>
